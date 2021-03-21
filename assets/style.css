@@ -1,0 +1,99 @@
+body {
+    background-color: black;
+    color: #ccc;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Header */
+
+header {
+    background-color:#290c2e;
+}
+
+header a{
+    font-weight: bold;
+}
+
+h1 {
+    padding: 10px 0 10px 25px;
+    font-family: "Bigelow Rules", sans-serif;
+    font-weight: lighter;
+    font-size: 500%;
+}
+
+a {
+    text-decoration: none;
+    color: #dc9ae6;
+    font-size: larger;
+}
+
+a:hover {
+    color: #222223;
+}
+
+.hero {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url(./images/sequins-3944452_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    border-top: 3px solid #222223;
+    border-bottom: 3px solid #222223;
+}
+
+#headshot {
+    border-radius: 100%;
+    width: 200px;
+    float: right;
+    margin: 25px;
+    border: 3px solid #ccc;
+}
+
+.custom-nav {
+    margin-left: 25px;
+}
+
+/* Main Body of Site */
+
+h2 {
+    font-family: 'Bigelow Rules', sans-serif;
+    font-size: 350%;
+    color: #dc9ae6;
+}
+
+.col-border {
+    border-left: 3px solid #dc9ae6;
+}
+
+.card p {
+    color:black;
+}
+
+.card img:hover {
+    filter: grayscale();
+}
+
+#planner {
+    max-width: 100%;
+}
+
+h3 {
+    font-family: 'Bigelow Rules', sans-serif;
+    font-size: 350%;
+    color: #ccc;
+}
+
+.badge a {
+    font-size:x-large;
+}
+
+.modal img {
+    border: solid 3px black;
+}
+
+@media only screen and (max-width: 475px) {
+    h2 {
+        font-size: 250%;
+    }
+  }
