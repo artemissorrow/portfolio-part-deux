@@ -55,15 +55,15 @@
             </div>
             <div class="col-8 col-border">
                 <section id="projects">
-                    <div class="card mb-4">
-                        <img src="./assets/images/sittrscreenshot2.jpg" class="card-img-top" alt="...">
+                    <div class="card mb-4" div class="card" data-bs-toggle="modal" data-bs-target="#sittrModal">
+                        <img src="./assets/images/sittrscreenshot2.jpg" class="card-img-top" alt="screenshot">
                         <div class="card-body bg-secondary">
                             <p class="card-text lead">babysittr</p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-4">
-                            <div class="card" data-bs-toggle="modal" data-bs-target="#pgenModal">
+                            <div class="card custom-card" data-bs-toggle="modal" data-bs-target="#pgenModal">
                                 <img src="./assets/images/pwordgenscreenshot.jpg" class="card-img-top" alt="screenshot">
                                 <div class="card-body bg-secondary">
                                     <p class="card-text">Password Generator</p>
@@ -71,7 +71,7 @@
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="card" data-bs-toggle="modal" data-bs-target="#plannerModal">
+                            <div class="card custom-card" data-bs-toggle="modal" data-bs-target="#plannerModal">
                                 <img src="./assets/images/dayplannerscreenshot.jpg" class="card-img-top"
                                     alt="screenshot">
                                 <div class="card-body bg-secondary">
@@ -80,7 +80,7 @@
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="card" data-bs-toggle="modal" data-bs-target="#quizModal">
+                            <div class="card custom-card" data-bs-toggle="modal" data-bs-target="#quizModal">
                                 <img src="./assets/images/quizscreenshot.jpg" class="card-img-top" alt="screenshot">
                                 <div class="card-body bg-secondary">
                                     <p class="card-text">JavaScript Quiz</p>
@@ -174,10 +174,28 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="sittrModal" tabindex="-1" aria-labelledby="sittrModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header bg-dark">
+                    <h3 class="modal-title">(babysittr)</h3>
+                </div>
+                <div class="modal-body bg-dark text-center">
+                    <img id="quiz" class="modalImg" src="./assets/images/sittrscreenshot.jpg" alt="screenshot of (babysittr) web app">
+                    <p>Web app to help babysitters and parents communicate about scheduling.</p>
+                    <span class="badge bg-secondary"><a
+                            href="https://polysnacktyl.github.io/project-1">link</a></span> <span
+                        class="badge bg-secondary"><a href="https://github.com/polysnacktyl/project-1"><i
+                                class="fab fa-github-alt"></i></a></span>
+                </div>
+                <div class="modal-footer bg-dark"><button type="button" class="btn btn-secondary"
+                        data-bs-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
-    <!-- <script src=".assets/script.js"></script> -->
 </body>
 
 </html>

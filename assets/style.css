@@ -100,4 +100,8 @@ h3 {
     h1 {
         color: #dc9ae6;
     }
+
+    .custom-card {
+        margin-bottom: 25px;
+    }
   }
