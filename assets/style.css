@@ -74,7 +74,7 @@ h2 {
     filter: grayscale();
 }
 
-#planner {
+.modalImg {
     max-width: 100%;
 }
 
