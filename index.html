@@ -35,15 +35,18 @@
                 <h2>about</h2>
             </div>
             <div class="col-8 col-border">
-                <p class="bio mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    ut
-                    labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                    dolore eu
-                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.</p>
+                <div class="bio mb-4">
+                    <p>Artemis Morrow is a newly-minted web developer with a strong aesthetic sense and creative
+                        background.
+                        She received a BA in Theatre from SUNY College at Plattsburgh with a particular focus on costume
+                        design and construction in May of 2006.
+                    </p>
+                    <p>
+                        After almost two decades of experimenting with basic HTML, she decided to channel her enjoyment
+                        of problem-solving and making things into learning to code in 2020. She looks forward to
+                        bringing her wide-ranging and varied work experience into the exciting growing world of programming.
+                    </p>
+                </div>
             </div>
         </section>
         <section id="work" class="row">
@@ -70,20 +73,19 @@
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="card">
-                                <img src="..." class="card-img-top" alt="...">
+                            <div class="card" data-bs-toggle="modal" data-bs-target="#plannerModal">
+                                <img src="./assets/images/dayplannerscreenshot.jpg" class="card-img-top"
+                                    alt="screenshot">
                                 <div class="card-body bg-secondary">
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the
-                                        bulk of the card's content.</p>
+                                    <p class="card-text">Work Day Planner</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="card" data-bs-toggle="modal" data-bs-target="#plannerModal">
-                                <img src="./assets/images/dayplannerscreenshot.jpg" class="card-img-top" alt="screenshot">
+                            <div class="card" data-bs-toggle="modal" data-bs-target="#quizModal">
+                                <img src="./assets/images/quizscreenshot.jpg" class="card-img-top" alt="screenshot">
                                 <div class="card-body bg-secondary">
-                                    <p class="card-text">Work Day Planner</p>
+                                    <p class="card-text">JavaScript Quiz</p>
                                 </div>
                             </div>
                         </div>
@@ -97,27 +99,33 @@
             </div>
             <div class="col-8 col-border">
                 <ul class="list-inline mt-4">
-                    <li class="list-inline-item">267.277.3166   </li>
+                    <li class="list-inline-item">267.277.3166</li>
+                    <li class="list-inline-item">|</li>
                     <li class="list-inline-item"><a href="mailto:c.artemis.morrow@gmail.com">c.artemis.morrow @ gmail .
-                            com   </a></li>
+                            com</a></li>
+                    <li class="list-inline-item">|</li>
                     <li class="list-inline-item"><a href="https://github.com/artemissorrow"><i
-                                class="fab fa-github-alt"></i><span class="m-2">GitHub   </span></a></li>
+                                class="fab fa-github-alt"></i><span class="m-2">GitHub</span></a></li>
+                    <li class="list-inline-item">|</li>
                     <li class="list-inline-item"><a href="https://www.linkedin.com/in/artemis-m-a13628aa/"><i
                                 class="fab fa-linkedin-in"></i><span class="m-2">LinkedIn</span></a></li>
                 </ul>
             </div>
         </section>
     </main>
-    <div class="modal fade" id="plannerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="plannerModal" tabindex="-1" aria-labelledby="plannerModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header bg-dark">
                     <h3 class="modal-title">Work Day Planner</h3>
                 </div>
                 <div class="modal-body bg-dark text-center">
-                    <img id="planner" src="./assets/images/dayplannerscreenshot.jpg" alt="screenshot of Workday Planner web app">
-                    <p>An 8-hour daily planner using Moment.js to keep track of the time and local storage to save tasks and appointments.</p>
-                    <span class="badge bg-secondary"><a href="https://artemissorrow.github.io/day-planner/">link</a></span> <span
+                    <img id="planner" src="./assets/images/dayplannerscreenshot.jpg"
+                        alt="screenshot of Workday Planner web app">
+                    <p>An 8-hour daily planner using Moment.js to keep track of the time and local storage to save tasks
+                        and appointments.</p>
+                    <span class="badge bg-secondary"><a
+                            href="https://artemissorrow.github.io/day-planner/">link</a></span> <span
                         class="badge bg-secondary"><a href="https://github.com/artemissorrow/day-planner"><i
                                 class="fab fa-github-alt"></i></a></span>
                 </div>
@@ -126,17 +134,41 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="pgenModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="pgenModal" tabindex="-1" aria-labelledby="pgenModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header bg-dark">
                     <h3 class="modal-title">Password Generator</h3>
                 </div>
                 <div class="modal-body bg-dark text-center">
-                    <img id="pgen" src="./assets/images/pwordgenscreenshot.jpg" alt="screenshot of Password Generator web app">
-                    <p>Random(ish) password generator that uses JavaScript to put together a password based on user input.</p>
-                    <span class="badge bg-secondary"><a href="https://artemissorrow.github.io/strong-password-generator/">link</a></span> <span
-                        class="badge bg-secondary"><a href="https://github.com/artemissorrow/strong-password-generator"><i
+                    <img id="pgen" src="./assets/images/pwordgenscreenshot.jpg"
+                        alt="screenshot of Password Generator web app">
+                    <p>Random(ish) password generator that uses JavaScript to put together a password based on user
+                        input.</p>
+                    <span class="badge bg-secondary"><a
+                            href="https://artemissorrow.github.io/strong-password-generator/">link</a></span> <span
+                        class="badge bg-secondary"><a
+                            href="https://github.com/artemissorrow/strong-password-generator"><i
+                                class="fab fa-github-alt"></i></a></span>
+                </div>
+                <div class="modal-footer bg-dark"><button type="button" class="btn btn-secondary"
+                        data-bs-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="quizModal" tabindex="-1" aria-labelledby="quizModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header bg-dark">
+                    <h3 class="modal-title">JavaScript Quiz</h3>
+                </div>
+                <div class="modal-body bg-dark text-center">
+                    <img id="pgen" src="./assets/images/quizscreenshot.jpg" alt="screenshot of JavaScript Quiz web app">
+                    <p>Brief quiz to test basic JavaScript knowledge. Almost entirely dynamically generated using
+                        JavaScript.</p>
+                    <span class="badge bg-secondary"><a
+                            href="https://artemissorrow.github.io/javascript-quiz/">link</a></span> <span
+                        class="badge bg-secondary"><a href="https://github.com/artemissorrow/javascript-quiz"><i
                                 class="fab fa-github-alt"></i></a></span>
                 </div>
                 <div class="modal-footer bg-dark"><button type="button" class="btn btn-secondary"

@@ -94,6 +94,10 @@ h3 {
 
 @media only screen and (max-width: 475px) {
     h2 {
-        font-size: 250%;
+        font-size: 225%;
+    }
+
+    h1 {
+        color: #dc9ae6;
     }
   }
