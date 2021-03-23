@@ -12,4 +12,4 @@ Portfolio upgraded! New, improved version includes:
 https://artemissorrow.github.io/portfolio-part-deux/
 
 ![screenshot on laptop](./assets/images/screenshot.png)
-![screenshot at mobile size](.assets/images/screenshot2.png)
+![screenshot at mobile size](./assets/images/screenshot2.png)
